@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/paulohhs/arquitetura-hexagonal/application"
-	mock_application "github.com/paulohhs/arquitetura-hexagonal/application/mocks"
+	mock_application "github.com/paulohhs/arquitetura-hexagonal/tests/application/mocks"
 	"github.com/stretchr/testify/require"
 )
 

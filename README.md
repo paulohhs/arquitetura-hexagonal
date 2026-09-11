@@ -26,15 +26,15 @@ Também é possível executar os testes pelo terminal.
 
     É necessário estar no pacote onde o teste está localizado. Caso não esteja, informe o caminho do pacote. Por exemplo:
     
-    `go test ./application -run <nome-do-teste>`
+    `go test ./tests -run <nome-do-teste>`
 
 - Para executar todos os testes de um pacote:
 
-    `go test ./application`
+    `go test ./tests`
 
 - Para executar todos os testes do projeto:
 
-    `go test ./...`
+    `go test ./tests/...`
 
 ### Execução via container
 Também é possível executar os testes dentro do container da aplicação.
