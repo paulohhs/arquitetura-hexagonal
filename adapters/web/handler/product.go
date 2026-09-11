@@ -21,11 +21,11 @@ func MakeProductHandlers(r *mux.Router, n *negroni.Negroni, service application.
 
 	r.Handle("/product/{id}/enable", n.With(
 		negroni.Wrap(enableProduct(service)),
-	)).Methods("GET", "OPTIONS")
+	)).Methods("PUT", "OPTIONS")
 
 	r.Handle("/product/{id}/disable", n.With(
 		negroni.Wrap(disableProduct(service)),
-	)).Methods("GET", "OPTIONS")
+	)).Methods("PUT", "OPTIONS")
 }
 
 func getProduct(service application.ProductServiceInterface) http.Handler {
